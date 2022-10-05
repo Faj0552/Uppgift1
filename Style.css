@@ -1,20 +1,18 @@
-body,html{
+html{
     margin: 0%;
     background-color: black;
+    
+}
+body{
+    background-color:#535204;
     color: white;
-}
 
-#container{
-    position: sticky;
-    top: 0;
 }
-.head {
-    padding-top: 50px;
+header{
+    padding:15px;
     margin-bottom: 0;
     position:sticky;
-    background-color: black;
-    
-   
+    background-color: black; 
 }
  
 .shortname{
@@ -28,7 +26,6 @@ body,html{
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    margin-top: -40px;
     margin-left: 15px;
     animation:shortname 2s infinite;
 }
@@ -66,71 +63,50 @@ body,html{
  
       
 .picture{
-    display: block;
-      width: auto;
-      height: 55vh;
-      margin-left: auto;
-      margin-right: auto;
+      width: 60%;
+      height: auto;
       border: 5px solid white;
       border-radius: 10px;
-      margin-top: 18px;
+      margin-top: 2px;
+      justify-content: center;
       
        
     }
 
-.my_div{
-    
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-top: 7px;
-    text-align: center;
-    text-align: center;
-    font-weight: bold;
-    color: rgb(255, 255, 255);   
-}
-
 a{
     color: #535204;
     background-color: transparent;
-    text-decoration: none;
-    
-  
+    text-decoration: none; 
 }
-
 .icon{
     position: relative;
     font-size: 20px;
     font-style: italic;
     text-align: center;
-    
-
 }
-
 main{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    justify-content: center;
+    align-items: center;
     background-color: #535204;
    
 }
-aside{
+nav{
     
     margin-top: 20px;
     width: 100%;
     position: relative;
     display:flex;
     flex-direction: row;
-    
-    
-
-    
+   justify-content: flex-end;
+        
 }
 section{
     margin-top: 15px;
     width: 100%;
-    text-align: left;
-   
-  
-   
+    text-align: center;
 }
 
 ul,li{
@@ -141,71 +117,43 @@ ul,li{
     display: inline-block;
     list-style: none;
     text-align: center;
-    margin-left: 10px;
-    
-    
-    
+    margin-left: 10px;   
+}
+.content{
+    justify-content: center;
 }
 #box{
     border:2px solid white;
     background-color: rgba(87, 81, 156, 0.597);
     border-radius: 10px;
-    margin: 5px;
-    padding:20px;
     text-align: center;
+    margin: 5px;
 }
 p{
-    color: black;
     font-size: 18px;
     text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
     
 }
-.picture1{
+.content-pic{
+    color: white;
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: 50vh;
-    margin-left: auto;
-    margin-right: 5px;
-    border: 5px solid white;
-    border-radius: 10px;
-    margin-top: 18px;
-
-}
-table{
-    background-color: antiquewhite;
-    max-width: 90%;
-    border: 5px solid black;
-    text-align: center;
+    width: 80%;
+    gap:15px;
     margin-left: auto;
     margin-right: auto;
-    
-    
-    
+    margin-bottom: 15px;
 }
-
-
-.content{
-    display: flex;
-    flex-direction: column;
-
+table{
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;  
 }
-.namnet{
-    padding-top: 1%;
-    justify-content: center;
-}
-.my_div{
-    display: flex;
-    flex-direction: column;
- }
- .contentone{
-    background-color: rgba(240, 248, 255, 0.179);
-    display: flex;
-    flex-direction: column;
- }
-
  h2{
     margin: 10px;
 }
@@ -217,65 +165,73 @@ table{
     flex-wrap: nowrap;  
     gap: 5px;
     border: 5px solid white;
-    
-
 }
 img{
     
     width: 100%;
     height: 100%;
 }
+footer{
+    color: white;
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid olive;
+}
+.fa {
+        position: relative;
+        font-size: 25px;
+        width: 30px;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 40%;
+        padding: 5px;
+}
+      
+.fa:hover {
+          opacity: 0.7;
+}
 
-
+.fa-facebook, .fa-instagram, .fa-linkedin {
+      color: white;
+      background-color: olive;
+     
+}    
         
 @media screen and (min-width: 768px)  {
     .head {
         padding-right: 20px;
     }
-    .content{
-        display: flex;
+    main{
         flex-direction: row;
-    
+        width: 100%;
+        padding-left: 20px;
+        
     }
-    .my_div {
-            justify-content: center;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-    }
+
      .picture{
             border-radius: 15%;
-            height: 78vh;
-                          
+            height: 78vh;                      
     }
     .namnet{
         
-        width: 50%;
+        width: 80%;
         height: auto;
-        padding-top: 10%;
-        padding-left: 20px;
-        justify-content: center;
+        padding-top: 10px;
+        padding-right: 30px;
+        justify-content: left;
     }
-    aside{
-       justify-content: right;   
-        
-        
-    }
-   
-    .contentone{
-        padding-left: 5px;
-        flex-direction:row-reverse;
-        flex-wrap: nowrap;
-        
+    .content-pic{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+  
     }
     .project{
         flex-direction: row;
     }
-    
-   
-   
-  
-
 
 }
 
